@@ -1,0 +1,42 @@
+<style>
+    .toolbar {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; */
+    display: flex;
+    border-bottom: 3px solid  #1976d2;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 900;
+  }
+
+  mat-toolbar.menubar {
+    height: auto;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2);
+  }
+
+  /* mat-toolbar.menubar > button {
+    border-radius: 0;
+  } */
+</style>
+<div class="toolbar">
+    <!-- <div class="slope"></div> -->
+    <h2 id="pageTitle">NPM - Operators {{ ' - ' + titleService.getTitle()}}</h2>
+    <div id="user">
+        <div>
+            <mat-icon aria-label="User">account_circle</mat-icon>
+        </div>
+    </div>
+</div>
+
+<mat-toolbar class="menubar">
+    <button mat-button routerLink="/home" >Home</button>
+    <button mat-button routerLink="/userDashboard" >User Dashboard</button>
+    <button mat-button routerLink="/customerDashboard" >Customer Dashboard</button>
+</mat-toolbar>
+
